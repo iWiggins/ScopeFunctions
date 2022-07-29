@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -9,6 +9,16 @@
     <Description>C# extension methods providing null-safe call chaining.</Description>
     <Copyright>2022 Ian Wiggins</Copyright>
     <PackageProjectUrl>https://github.com/iWiggins/ScopeFunctions</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/iWiggins/ScopeFunctions</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
