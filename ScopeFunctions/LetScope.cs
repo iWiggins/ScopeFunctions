@@ -28,7 +28,7 @@ namespace ScopeFunctions
         /// There is no way to constrain this to only nullable types,
         /// so instead it throws an exception if a non-nullable type is detected.
         /// Use Let(caller, function, defaultReturn) for non-nullable types.
-        /// /remarks>
+        /// </remarks>
         public static TReturn? Let<T, TReturn>(this T caller, Func<T, TReturn?> function)
         {
             if (caller != null) return function(caller);
